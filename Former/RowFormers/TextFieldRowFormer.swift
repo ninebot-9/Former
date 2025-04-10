@@ -41,8 +41,17 @@ open class TextFieldRowFormer<T: UITableViewCell>
         return self
     }
 
+    /// 此处 xcode16 Archive 报错 fix：修改 onReturn 方法名为 onReturnAction
+    /**
+     报错信息
+     While evaluating request ExecuteSILPipelineRequest(Run pipelines { PrepareOptimizationPasses, EarlyModulePasses, HighLevel,Function+EarlyLoopOpt, HighLevel,Module+StackPromote, MidLevel,Function, ClosureSpecialize, LowLevel,Function, LateLoopOpt, SIL Debug Info Generator } on SIL for TestFormer)
+     While running pass #23941 SILFunctionTransform "DeadArgSignatureOpt" on SILFunction "@$s10TestFormer012TextFieldRowB0C8onReturnyACyxGXDySScF".
+      for 'onReturn(_:)' (at TextFieldRowFormer.swift)
+     ...
+     Command SwiftCompile failed with a nonzero exit code
+     */
     @discardableResult
-    public final func onReturn(_ handler: @escaping ((String) -> Void)) -> Self {
+    public final func onReturnAction(_ handler: @escaping ((String) -> Void)) -> Self {
         onReturn = handler
         return self
     }
