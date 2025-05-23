@@ -4,8 +4,9 @@ Pod::Spec.new do |spec|
   spec.author       = { "ra1028" => "r.fe51028.r@gmail.com" }
   spec.homepage     = "https://github.com/ra1028"
   spec.summary      = "Former is a fully customizable Swift library for easy creating UITableView based form."
-  spec.source       = { :git => "https://github.com/ra1028/Former.git", :tag => spec.version.to_s }
+  # spec.source       = { :git => "https://github.com/ra1028/Former.git", :tag => spec.version.to_s }
   # spec.source       = { :git => "https://github.com/ninebot-9/Former.git", :tag => spec.version.to_s }
+  spec.source       = { :git => "https://www.baidu.com", :tag => spec.version.to_s }
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.platform = :ios, '10.0'
   spec.source_files = "Former", "Former/**/*.{swift}"
