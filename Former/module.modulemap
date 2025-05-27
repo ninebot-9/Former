@@ -1,4 +1,3 @@
 framework module Former {
   export *
-  module * { export * }
 }
