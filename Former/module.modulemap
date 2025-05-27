@@ -1,0 +1,6 @@
+framework module Former {
+  umbrella header "Former-Swift.h"
+
+  export *
+  module * { export * }
+}
