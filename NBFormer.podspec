@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name         = "NBFormer"
   spec.module_name  = "Former"
-  spec.version      = "0.2.1"
+  spec.version      = "0.2.3"
   spec.author       = { "ra1028" => "r.fe51028.r@gmail.com" }
   spec.homepage     = "https://github.com/ra1028"
   spec.summary      = "Former is a fully customizable Swift library for easy creating UITableView based form."
